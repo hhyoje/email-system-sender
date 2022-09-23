@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="emailSystem">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="emailSystemController">
+    <h1>Sign Up</h1>
+    <p>{{message}}</p>
+    <form ng-submit="sendData()">
+      <label>Name:</label>
+      <input type="text" ng-model="name" placeholder="Enter a name here">
+      <label>Email:</label>
+      <input type="text" ng-model="email" placeholder="Enter an email here">
+      <input type="submit" value="Send confirmation email">
+    </form>
+  </body>
+</html>
